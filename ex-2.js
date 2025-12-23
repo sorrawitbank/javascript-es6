@@ -14,4 +14,8 @@ let studentScores = {
 
 // Start coding here
 
+let newStudentProfile = {
+  ...studentProfile,
+  scores: { ...studentProfile.scores, ...studentScores }, //สร้าง key scores: แล้วรวม 2 obj ไว้ในนั้น
+};
 console.log(newStudentProfile);
